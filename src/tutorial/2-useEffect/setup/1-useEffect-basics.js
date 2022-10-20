@@ -4,17 +4,17 @@ import React, { useState, useEffect } from 'react';
 // second parameter
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
-  useEffect(()=> {
+  useEffect(() => {
     console.log("useEffect Basics")
-    if(value >= 1){
-      document.title = `see Me(${value})`
+    if (value > 0){
+      document.title = `new Messages(${value})`;
     }
-  }, [])
+  })
   return (
       <>
       <h1>{value}</h1>
       <button className='btn' onClick={() => setValue(value + 1)}>
-        You can Click me!
+        Click me!
       </button>
       </>
   )
