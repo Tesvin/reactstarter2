@@ -32,10 +32,11 @@ const UseEffectFetchData = () => {
               </div>
             </li>
           );
-        })}
+         })}
       </ul>
     </>
   );
 };
 
 export default UseEffectFetchData;
+ 
